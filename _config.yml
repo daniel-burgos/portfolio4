@@ -50,8 +50,8 @@ author:
 menu:
   #- title:             Example
     #url:               /example/
-  #- title:             Documentation
-    #url:               /docs/
+  - title:             Resume
+    url:               https://daniel-burgos.github.io/resume/
   - title:             About
     url:               /about/
 
