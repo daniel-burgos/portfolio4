@@ -18,9 +18,9 @@ author1:
     #/assets/img/Profile_Picture.png
     
     # srcset is optional, but can be used to provide higher res versions for retina displays
-    srcset:
-      1x:            
-      2x:            
+    srcset: /assets/img/dc-power.png
+      1x:      /assets/img/dc-power.png      
+      2x:       /assets/img/dc-power.png     
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
