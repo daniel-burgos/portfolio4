@@ -18,7 +18,7 @@ author1:
     #/assets/img/Profile_Picture.png
     
     # srcset is optional, but can be used to provide higher res versions for retina displays
-    srcset: /assets/img/dc-power.png
+    #srcset: /assets/img/dc-power.png
       #1x:      /assets/img/dc-power.png      
       #2x:       /assets/img/dc-power.png     
 
