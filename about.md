@@ -13,7 +13,7 @@ redirect_from:
 
 <!--author-->
 
-## Work Experience
+# Work Experience
 
 ### University of Houston, 2023 - Present
 #### Instructional Designer 
