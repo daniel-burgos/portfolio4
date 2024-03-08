@@ -291,11 +291,11 @@ hydejack:
 collections:
   featured_categories:
     permalink:         /:name/
-    output:            false
+    output:            true
 
   featured_tags:
     permalink:         /tag-:name/
-    output:            false
+    output:            true
 
   projects:
     permalink:         /projects/:path/
