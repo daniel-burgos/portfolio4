@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Example Content
-description: >
-  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
-sitemap: false
-hide_last_modified: true
+related_posts:
+  # Specify via the path in the file system
+  - /example/_posts/test.md
+  # Can also use the url of the post,
+  # but this will break when changing the `permalink` setting!
+  #- /blog/category/2020-01-02-other-other-post/
 ---
