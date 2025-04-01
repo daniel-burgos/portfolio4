@@ -3,13 +3,13 @@
 
 # Uncomment and set the URL of your site (with protocol, e.g. `https://`)
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-# url:                   https://username.github.io
+url: "http://daniel-burgos.github.io"
 
 # Uncomment and set the "base URL" of your site.
 # When your site is in a subdirectory, set to `/<name of directory>`,
 # with a leading `/` but no trailing `/`. Use the empty string '' otherwise.
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-# baseurl:               '/hydejack-starter-kit'
+baseurl: "/portfolio4"
 
 
 # General settings
@@ -20,16 +20,15 @@
 lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Starter Kit
+title:                 Daniel Casanova
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+  Portfolio showcasing Daniel Casanova's work as an Instructional Designer.
 
 # A shorter description for the sidebar.
-tagline:               Change `tagline` in `_config.yml`
+tagline:               Portfolio
 
 # A list of keywords for your blog
 keywords:              []
@@ -37,37 +36,37 @@ keywords:              []
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/logo.png
+logo:                  /assets/img/dc-power.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                <firstname> <lastname>
-  email:               <mail@domain.tld>
+  name:                Daniel Casanova
+  email:               dubcasanova@gmail.com
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
 # Add links to the sidebar.
 menu:
-  - title:             Example
-    url:               /example/
-  - title:             Documentation
-    url:               /docs/
+  - title:             Projects
+    url:               /projects/
+  - title:             Resume
+    url:               https://daniel-burgos.github.io/resume/
   - title:             About
     url:               /about/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
 legal:
-  - title:             LICENSE
-    url:               /LICENSE/
-  - title:             NOTICE
-    url:               /NOTICE/
-  - title:             CHANGELOG
-    url:               /CHANGELOG/
+  - title:             Logo Attribution
+    url:               "https://www.flaticon.com/free-icons/dc-power"
+  #- title:             NOTICE
+    #url:               /NOTICE/
+  #- title:             CHANGELOG
+    #url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2024. All rights reserved.
+copyright:             © 2023. All rights reserved.
 
 # Format of the permalinks
 permalink:             /:categories/:year-:month-:day-:title/
@@ -80,19 +79,15 @@ paginate_path:         /:num/
 # Theme
 # ---------------------------------------------------------------------------------------
 
-# This will use the gem `jekyll-theme-hydejack`, as defined in the sibling `Gemfile`.
 theme: jekyll-theme-hydejack
+remote_theme: hydecorp/hydejack@v9
 
-# You can uncomment `theme` above and replace it with `remote_theme` here iff you are using the 
-# `jekyll-remote-theme` plugin (which is the case when using the legacy GitHub Pages pipeline).
-# This will fetch the `v9` branch of the public Hydejack repository on GitHub.
-# remote_theme: hydecorp/hydejack@v9
 
 # Customizaton
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/sidebar-bg.jpg
+accent_image:          /assets/img/blog/jeremy-bishop@0,5x.jpg
 accent_color:          rgb(79,177,186)
 
 # This is used for the `theme-color` meta tag,
@@ -100,27 +95,20 @@ accent_color:          rgb(79,177,186)
 # Defaults to `accent_color`.
 theme_color:           rgb(25,55,71)
 
-# IMPORTANT:
-# As of Hydejack 9.2, Google Fonts are turned off by default due to a stronger focus on privacy.
-# Hydejack will use the default font of your visitor's operating system instead.
-# If you want to match the look of hydejack.com, remove the following line and uncomment 
-# the font-related options below:
-
 # The string encoding which fonts to fetch from Google Fonts.
 # See: <https://hydejack.com/docs/configuration/>
-# google_fonts:          Roboto+Slab:700|Noto+Sans:400,400i,700,700i
+google_fonts:          Roboto+Slab:700|Noto+Sans:400,400i,700,700i
 
 # The text font. Expects a string that is a valid CSS font-family value.
 # To change font-weight, see _sass/variables.scss
-# font:                  Noto Sans, Helvetica, Arial, sans-serif
+font:                  Noto Sans, Helvetica, Arial, sans-serif
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
 # To change font-weight, see _sass/variables.scss
-# font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
+font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
 
-# The font used for code blocks. Expects a string that is a valid CSS font-family value. 
-# Defaults to the [System Monospace Font Stack](https://qwtel.com/posts/software/the-monospaced-system-ui-css-font-stack/).
-# font_code:             Fira Code, Menlo, Monaco, Consolas, monospace;
+# The font used for code blocks. Expects a string that is a valid CSS font-family value.
+font_code:             Fira Code, Menlo, Monaco, Consolas, monospace;
 
 defaults:
   # You can use this to provide a default accent color and background for
@@ -140,7 +128,6 @@ defaults:
     values:
       sitemap:         false
 
-  # Don't include licenses in sitemap (feel free to delete)
   - scope:
       path:            licenses/
     values:
@@ -172,9 +159,25 @@ defaults:
         type:          WebPage
 
 kramdown:
-  math_engine:         katex
+  math_engine:         mathjax
   math_engine_opts:    {}
   footnote_backlink:   '&#x21a9;&#xfe0e;'
+
+
+# 3rd Party Integrations
+# ----------------------------------------------------------------------------------------
+
+# Set your Google Analytics id to receive `pageview` events.
+# To remove Google Anaylics from your page, remove the line below.
+# google_analytics:      UA-XXXXXXXX-X
+
+# Setting a disqus shortname will enable the comment section on
+# pages with `comments: true` in the front matter.
+# disqus:                <username>
+
+# Setting a tinyletter username will enable the newsletter subscription box.
+# PRO version only!
+# tinyletter:            <username>
 
 
 # Hydejack Settings
@@ -205,7 +208,7 @@ hydejack:
   # Set to true to disable the built-in search functionality.
   # Note that search is disabled during local use to save on build time.
   # Run Jekyll with the `JEKYLL_ENV` environment variable set to `production` to enable.
-  no_search:           false
+  no_search:           true
 
   # Set to `true` if you do not want parts of the css inlined in <head/>
   # This will increase site build speed dramatically!
@@ -213,7 +216,7 @@ hydejack:
 
   # Set to `true` if you don't intend on changing the accent color on a per-page basis. 
   # This will increase site build speed!
-  no_page_style:       false
+  no_page_style:       true
 
   # Code blocks and tables "break" the layout by spanning the full available width.
   # Set this to true if you want them to be the same width as other content.
@@ -241,8 +244,7 @@ hydejack:
   # Disable the breadcrumbs above the title
   no_breadcrumbs:      false
 
-  # Set to `true` when building with the `--lsi` option.
-  # The net effect is to use the Jekyll-provided `site.related_posts` variable.
+  # Set to `true` when building with the `--lsi` option
   use_lsi:             true
 
   # When using Google Analytics, set to `true` to display a cookie notice banner.
@@ -258,8 +260,8 @@ hydejack:
   # seeing an old date. 
   hide_dates:          false
 
-  # Similarly, showing last modified date can devalue a post if it is too far in the past.
-  hide_last_modified:  false
+  # TODO
+  hide_last_modified:  true
 
   # Note that dark mode only works in the PRO version of Hydejack.
   dark_mode:
@@ -289,11 +291,11 @@ hydejack:
 collections:
   featured_categories:
     permalink:         /:name/
-    output:            true
+    output:            false
 
   featured_tags:
     permalink:         /tag-:name/
-    output:            true
+    output:            false
 
   projects:
     permalink:         /projects/:path/
@@ -306,15 +308,11 @@ collections:
 exclude:
   - .jekyll-cache
   - .sass-cache
-  - .ruby-lsp
-  - .wrangler
   - '*.toml'
   - vendor
   - Gemfile
   - Gemfile.lock
-  - functions
 include:
-  - _routes.json
   - .well-known
   - LICENSE.md
 
